@@ -1,0 +1,59 @@
+CREATE TABLE TRANSPORT_FACT (
+	TRANSPORT_SK integer,
+	LOADSMART_ID varchar PRIMARY KEY AUTOINCREMENT,
+	LANEORIGN varchar,
+	LANEDESTINATION varchar,
+	QUOTE_DATE datetime,
+	BOOK_DATE datetime,
+	PICKUP_DATE datetime,
+	DELIVERY_DATE datetime,
+	DELIVERY_APPOINTMENT_TIME datetime,
+	PICKUP_APPOINTMENT_TIME datetime,
+	SOURCE_DATE datetime,
+	SOURCE_PRICE float,
+	BOOK_PRICE float,
+	PNL float,
+	MILEAGE float,
+	EQUIPMENT_TYPE varchar,
+	CARRIER_ID integer,
+	CARRIER_DROPPED integer,
+	SOURCING_CHANNEL varchar,
+	SHIPPER_ID integer,
+	CARRIER_ON_TIME_TO_PICKUP varchar,
+	CARRIER_ON_TIME_TO_DELIVERY varchar,
+	CARRIER_ON_TIME_OVERALL varchar,
+	LOAD_BOOKED_AUTONOMOUS varchar,
+	LOAD_SOUCE_AUTONOMOUS varchar,
+	LOAD_WAS_CANCELLED varchar
+);
+
+CREATE TABLE DATE_DIM (
+	LSDATETIME datetime,
+	LSYEAR integer,
+	LSQUARTER integer,
+	LSMONTH integer,
+	LSWEEK integer,
+	LSDAY integer,
+	LSHOUR integer,
+	LSMINUTE integer
+);
+
+CREATE TABLE SHIPPER_DIM (
+	SHIPPER_ID integer,
+	SHIPPER_NAME varchar
+);
+
+CREATE TABLE LOCATION_DIM (
+	CITYID integer,
+	CITYNAME varchar,
+	STATE varchar,
+	COUNTRY varchar
+);
+
+CREATE TABLE CARRIER_DIM (
+	CARRIER_ID integer,
+	CARRIER_NAME varchar,
+	CARRIER_RATING integer,
+	VIP varchar
+);
+
