@@ -10,8 +10,9 @@ of Tableau or Power BI.
 
 #DELIVER FILES
 
-* - LoadSmart.pdf - Desired data model for this test.
-* - LoadSmart_sqlite_create.sql - SQL files from data model
-* - LoadSmart.ipynb - Jupyter(python) code to extract, transform, clean, understand and load data
-* - data.csv - raw dataframe
-* - data2.csv - cleaned dataframe
+- LoadSmart.pdf - Desired data model for this test.
+- LoadSmart_sqlite_create.sql - SQL files from data model
+- LoadSmart.ipynb - Jupyter(python) code to extract, transform, clean, understand and load data
+- LoadSmart.twb - Tableau Dasboard
+- data.csv - raw dataframe
+- data2.csv - cleaned dataframe
