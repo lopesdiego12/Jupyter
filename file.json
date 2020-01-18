@@ -1,0 +1,24 @@
+[
+	{
+		"date": "2019-12-31",
+		"idClient": 666,
+		"typeEvent":  "Navegation",
+		"msInPage": 120000,
+		"percentScroll": 65,
+		"url": "www.meu-ecommerce.com/sofa-3.html"
+	},
+	{
+		"date":"2019-12-31",
+		"idClient": 789,
+		"typeEvent": "Navegation",
+		"msInPage": 120000,
+		"percentScroll": 33,
+		"url": "https://www.meu-ecommerce.com/carrinho"
+	},
+	{
+		"date":"2019-12-31",
+		"idClient": 666,
+		"typeEvent": "Click",
+		"idProduct": 118009
+	}
+]
